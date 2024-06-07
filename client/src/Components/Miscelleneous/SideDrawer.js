@@ -31,8 +31,7 @@ import { Spinner } from "@chakra-ui/spinner";
 import ChatLoading from "../ChatLoading";
 import UserListItem from "../UserAvatar/UserListItem";
 import { getSender } from "../../config/ChatLogic";
-import NotificationBadge from "react-notification-badge/lib/index";
-import { Effect } from "react-notification-badge";
+
 const SideDrawer = () => {
   const [search, setSearch] = useState("");
 
@@ -160,10 +159,7 @@ const SideDrawer = () => {
         <div>
           <Menu>
             <MenuButton padding={1}>
-              <NotificationBadge
-                count={notification.length}
-                effect={Effect.SCALE}
-              />
+              
               <BellIcon fontSize="2xl" margin={1} />
             </MenuButton>
             {/* Notification Functionality */}
